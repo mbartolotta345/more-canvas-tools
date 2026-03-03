@@ -16,7 +16,7 @@ const describeFailure = errors.failureDescriber({
 userscripter.run({
     id: U.id,
     name: U.name,
-    initialAction: () => log.log(`${U.name} ${U.version} - Hello world!`),
+    initialAction: () => log.log(`${U.name} ${U.version} - Hello world!`), 
     stylesheets: STYLESHEETS,
     operationsPlan: {
         operations: OPERATIONS,
@@ -26,3 +26,30 @@ userscripter.run({
         handleFailures: failures => failures.forEach(compose(log.error, describeFailure)),
     },
 });
+
+
+// userscripter.run({
+//     id: U.id,
+//     name: U.name,
+
+//     initialAction: () => {
+//         fetch("/api/v1/courses?enrollment_state=active", {
+//             method: "GET",
+//             credentials: "include",
+//             headers: {
+//                 "Accept": "application/json"
+//             }
+//         })
+//         .then(res => res.json())
+//         .then(courses => console.log("Enrolled Courses:", courses));
+//     },
+
+//     stylesheets: STYLESHEETS,
+//     operationsPlan: {
+//         operations: OPERATIONS,
+//         interval: CONFIG.OPERATIONS_INTERVAL,
+//         tryUntil: environment.DOMCONTENTLOADED,
+//         extraTries: CONFIG.OPERATIONS_EXTRA_TRIES,
+//         handleFailures: failures => failures.forEach(compose(log.error, describeFailure)),
+//     },
+// });
