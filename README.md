@@ -25,6 +25,7 @@ We are always working on new features, but here's what we have so far:
 3. [Spread Grade](#spread-grade): A particular tool for the speedgrader that replicates grades to other group members (based on email addresses found in the submitted Word document). Mostly only for courses that use Word Documents.
 4. [List Ungraded Submissions](#list-ungraded-submissions): A tool to list all ungraded submissions in a course.
 5. [List Recently Enrolled Users](#list-recently-enrolled-users): A tool to list all users who have recently enrolled in a course.
+6. [Dashboard Organization](#dashboard-organization): Two new buttons to customize class visibility and tags.
 
 ## Activity Report
 
@@ -121,6 +122,17 @@ You can adjust the delimiter and quote for how the file is generated, but that s
 The `Save Draft` and `Load Draft` buttons allow you to store/restore the current version of the **PREVIEW AREA** (not the textarea) in your localStorage. This is useful for saving your work in progress, if you need to come back to it later.
 
 Finally, the `Preview and Publish Dates to Course` button will take the contents of the preview area and check how they will be applied to this course. It will show you a list of assignments that will be updated, and then you can click the `Apply Changes` button to actually apply the changes. This will update the assignments in the course with the new dates. Or you can click `Cancel Changes` to go back to editing the dates.
+
+## Dashboard Organization
+
+Two new buttons to customize Canvas class visibility and custom tags
+
+![image](tags.gif)
+Create tags that show custom information under your classes.
+
+![image](visibility.gif)
+Choose from a quick dropdown list of which classes you would like to view on your dashboard.
+
 
 ## Development Environment Installation
 
